@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/36fb6fc507.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portifólio</title>
+</head>
+<body>
+
+    <header data-uk-sticky>
+        <button class="uk-button uk-button-secondary" type="button" uk-toggle="target: #offcanvas-overlay" style="margin: 10px ;">MENU</button>
+        
+        <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <div class="uk-width-1-2@s uk-width-2-5@m">
+                    <ul class="uk-nav uk-nav-default">
+                        <li><a href="#home" uk-scroll>Home</a></li>
+                        <li><a href="#sobre" uk-scroll>Sobre</a></li>
+                        <li><a href="#skills" uk-scroll>Skills</a></li>
+                        <li><a href="#lab" uk-scroll>Laboratório</a></li>
+                        <li><a href="#contato" uk-scroll>Contato</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        
+    </header>
+
+    <section id="home">
+        <div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle inicio" style="background-image: url(./imgs/bg.jpg);">
+            <h1>
+                &lt; Lídia Galdino /&gt;
+            </h1>
+        </div>
+    </section>
+
+    <section class="uk-background-default" id="sobre">
+        <h2 class="uk-text-muted uk-flex-right uk-text-bold uk-padding-large">Sobre mim</h2>
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+            <div>
+                <div class="uk-section uk-section-muted">
+                    <h2>Lídia Galdino</h2>
+                    <p>Oi! Eu sou a Lídia, atualmente estou no primeiro semestre do curso Técnico de Desenvolvimento de Sistemas no SENAI Jandira. Com apenas 16 anos, já pude aprender várias linguagens de programação, como Python, Java, entre outras... Já participei de 4 campeonatos de robótica com a equipe escolar do SESI Jandira, estou sempre em desenvolvimento! Baixe meu currículo e me conheça melhor! Está logo abaixo:                  </p>
+                    <a href="./doc/curriculo.pdf" download="curriculo">
+                        <button class="uk-button uk-button-secondary">Currículo</button>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="uk-section uk-section-muted">
+                    <img class="uk-left-center uk-flex-middle" src="./imgs/cat.png" width="200" height="200" alt="">
+                    <p class="uk-text-muted uk-text-small">Created by
+                        <a href="https://www.freepik.com/author/catalyststuff">catalyststsuff</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-background-secondary" id="skills">
+        <h2 class="uk-text-muted uk-text-bold uk-padding-large">Skills</h2>
+        <div class="uk-child-width-expand@s uk-grid-small uk-text-center uk-padding-large" uk-grid>
+            <div>
+                <div class="uk-card uk-card-secondary uk-card-body uk-flex-column">
+                    <i class="fa-brands fa-html5 uk-text-large"></i>
+                    <p>HTML</p>
+                    <progress id="js-progressbar" class="uk-progress" value="50" max="100"></progress>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-secondary uk-card-body uk-flex-column">
+                    <i class="fa-brands fa-css3-alt uk-text-large"></i>
+                    <p>CSS</p>
+                    <progress id="js-progressbar" class="uk-progress" value="45" max="100"></progress>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-secondary uk-card-body uk-flex-column">
+                    <i class="fa-brands fa-js-square uk-text-large"></i>
+                    <p>JS</p>
+                    <progress id="js-progressbar" class="uk-progress" value="30" max="100"></progress>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-secondary uk-card-body uk-flex-column">
+                    <i class="fa-brands fa-java uk-text-large"></i>
+                    <p>JAVA</p>
+                    <progress id="js-progressbar" class="uk-progress" value="50" max="100"></progress>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-secondary uk-card-body uk-flex-column">
+                    <i class="fa-brands fa-python uk-text-large"></i>
+                    <p>Python</p>
+                    <progress id="js-progressbar" class="uk-progress" value="60" max="100"></progress>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="lab">
+        <h2 class="uk-text-muted uk-flex-right uk-text-bold uk-padding-large">Laboratório</h2>
+        <div class="uk-child-width-expand@s uk-grid-small uk-text-center uk-padding-small" uk-grid>
+            <div>
+                <div class="uk-card uk-card-muted uk-card-small">
+                    <img src="./imgs/strange.png" width="600" height="400" alt="">
+                    <p>DOCTOR STRANGE </p>
+                    <div class="uk-card-footer">
+                        <a href="https://github.com/lidiagaldino/doctor-strange" class="uk-button uk-button-text">Ver repositório</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-muted uk-card-hover uk-card-small">
+                    <img src="./imgs/dammy.PNG" width="600" height="400" alt="">
+                    <p>DAMMY</p>
+                    <div class="uk-card-footer">
+                        <a href="https://github.com/lidiagaldino/dammy" class="uk-button uk-button-text">Ver repositório</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-muted uk-card-hover uk-card-small">
+                    <img src="./imgs/ex.PNG" width="600" height="400" alt="">
+                    <p>Exercícios de ArrayList (JAVA)</p>
+                    <div class="uk-card-footer">
+                        <a href="https://github.com/lidiagaldino/exercicios-array" class="uk-button uk-button-text">Ver repositório</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-background-secondary" id="contato">
+        <h2 class="uk-text-muted uk-text-bold uk-padding-large">Contato</h2>
+        <div class="uk-child-width-expand@s uk-grid-small uk-text-center uk-padding-large" uk-grid>
+            <div>
+                <div class="uk-card uk-card-secondary uk-card-body uk-flex-column">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:lidia.galdino@outlook.com">
+                        <p>Gmail</p>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-secondary uk-card-body uk-flex-column">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/lidia-galdino-4b4033241/">
+                        <p>Linkedin</p>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-secondary uk-card-body uk-flex-column">
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/lidiagaldino">
+                        <p>GitHub</p>
+                    </a>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
