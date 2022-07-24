@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 section{
     height: auto;
 }
@@ -10,11 +13,11 @@ header{
 }
 h1{
     display: flex;
-    color: rgb(219, 253, 203);
-    font-size: 300%;
+    color: rgb(61, 71, 95);
+    font-size: 500%;
     font-family: 'Oswald', sans-serif;
     display: inline-block;
-  position: relative;
+    position: relative;
 }
 h1:after {
     content: '';
@@ -24,7 +27,7 @@ h1:after {
     height: 5px;
     bottom: 0;
     left: 0;
-    background-color: #00ca2c;
+    background-color: #91a1fd;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
